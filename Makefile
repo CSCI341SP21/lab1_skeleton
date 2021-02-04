@@ -1,4 +1,4 @@
-hw1: hw1.c hw1.h
+hw1: hw1.c
 	@gcc -c -Wall hw1.c
 	@gcc -Wall -o hw1 *.c
 
