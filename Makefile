@@ -1,9 +1,12 @@
-hw1: hw1.c
-	@gcc -c -Wall hw1.c
-	@gcc -Wall -o hw1 *.c
+CC := gcc
+CFLAGS := -Wall
+
+all: hw1
+
+hw1: hw1.o
 
 test: hw1
 	@readelf -sW hw1.o
 
 clean:
-	rm -f hw1 hw1.o
+	$(RM) hw1 hw1.o
